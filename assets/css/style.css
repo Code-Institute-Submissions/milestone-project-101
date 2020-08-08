@@ -1,0 +1,22 @@
+.square {
+    height: 200px;
+    width: 200px;
+    opacity: 0.5;
+    display: inline-block;
+}
+
+#square-1 {
+    background-color: red;
+}
+
+#square-2 {
+    background-color: blue;
+}
+
+#square-3 {
+    background-color: green;
+}
+
+#square-4 {
+    background-color: yellow;
+}
