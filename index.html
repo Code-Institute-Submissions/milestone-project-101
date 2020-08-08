@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Game</title>
+
+    <!-- Load Jasmine Framework -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine.js" integrity="sha256-PePX8Jc4TIxzzVz0Qe4NsH3OUU8+Y49DBWvYgggNqkY=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine-html.js" integrity="sha256-qazAASTTgUrq9SOYkPSB3oEuqbhn+2j4kxGkVZ0GKjY=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/boot.js" integrity="sha256-HG8TKl0T65NyELmbUoo0H7/a1e++smYdXXtuuEsyKok=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine.css" integrity="sha256-YzqdEMEXu1sH1t2Y9tk3XhKhxy1xMWvcA1koZx43k+8=" crossorigin="anonymous" />
+
+    <!-- Load Scripts -->
+    <script type="text/javascript" src="scripts/game.js"></script>
+
+    <!-- Load Tests -->
+    <script type="text/javascript" src="tests/gameSpecs.js"></script>
 </head>
 <body>
-    
+    <!-- Memory Game Title -->
+    <h2>Memory Game</h2>
+    <br>
+    <!-- Instructions -->
+    <p>The goal of the game is to memorise the order the squares light up and repeat it
+        Each level increases in difficulty.</p>
+    <br>
+    <!-- Start Game Button -->
+    <button>Start</button>
+    <br>
+    <!-- Score -->
+    <h4>0<h4>
+    <br>
+    <!-- Level Indicator -->
+    <h4>0<h4>
+    <br>
+    <!-- Game Interface - four squares -->
+    <div class="square" id="square-1"></div>
+    <div class="square" id="square-2"></div>
+    <div class="square" id="square-3"></div>
+    <div class="square" id="square-4"></div>
+
 </body>
 </html>
