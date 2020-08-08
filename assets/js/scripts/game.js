@@ -7,7 +7,7 @@ var gameState = "not playing";
 
 $(document).ready(function() {
 
-    $("#start-game").click(startGame)
+    $("#start-game").click(startCurrentLevel)
     $(".square").click(function() {
         handleUserClickingASquare($(this).attr("data-squareid"))
     })
@@ -18,18 +18,19 @@ var userSquareSequence = []
 var userScore = 0
 var level = 1
 
-async function startGame(){
+async function startCurrentLevel(){
     squareSequence = [ 3, 4, 1, 2]
 
-    await demonstrateSequence(squareSequence);
+    await demonstrateLevelSequence(squareSequence);
 }
 
-async function demonstrateSequence(squareSequence) {
+async function demonstrateLevelSequence(squareSequence) {
     gameState = "demonstration"
+    var displayDelayDuration = 2000/level
     for (square of squareSequence) {
         console.log(square);
         squareOn(square);
-        await delay(2000).then(() => squareOff(square));
+        await delay(displayDelayDuration).then(() => squareOff(square));
     }
     gameState = "user input"
 }
@@ -69,6 +70,7 @@ function winLevel() {
     userSquareSequence = []
     level++
     updateScoreAndLevel()
+    startCurrentLevel()
     console.log("Win")
 }
 
