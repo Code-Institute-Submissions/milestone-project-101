@@ -2,6 +2,8 @@
 function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
+//Copied from the internet from an answer on generating a random number within a range
+function randomIntFromInterval(min, max) { return Math.floor(Math.random() * (max - min + 1) + min); } 
 
 var gameState = "not playing";
 
@@ -19,7 +21,7 @@ var userScore = 0
 var level = 1
 
 async function startCurrentLevel(){
-    squareSequence = [ 3, 4, 1, 2]
+    squareSequence = Array(4).fill().map(() => randomIntFromInterval(1,4))
 
     await demonstrateLevelSequence(squareSequence);
 }
