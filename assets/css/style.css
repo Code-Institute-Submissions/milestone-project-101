@@ -20,3 +20,7 @@
 #square-4 {
     background-color: yellow;
 }
+
+.square.active {
+    opacity: 1;
+}
