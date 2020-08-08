@@ -3,7 +3,7 @@ function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-var gameState = "Not Playing";
+var gameState = "not playing";
 
 $(document).ready(function() {
 
@@ -25,11 +25,13 @@ async function startGame(){
 }
 
 async function demonstrateSequence(squareSequence) {
+    gameState = "demonstration"
     for (square of squareSequence) {
         console.log(square);
         squareOn(square);
         await delay(2000).then(() => squareOff(square));
     }
+    gameState = "user input"
 }
 
 function squareOn(square) {
@@ -43,14 +45,16 @@ function squareOff(square) {
 }
 
 function handleUserClickingASquare(clickedSquare) {
-    userSquareSequence.push(parseInt(clickedSquare));
-    console.log(userSquareSequence)
-    console.log(squareSequence)
-    if (userSquareSequence.length === squareSequence.length) {
-        if (JSON.stringify(userSquareSequence) === JSON.stringify(squareSequence)) {
-            winLevel()
-        } else {
-            loseGame()
+    if (gameState === "user input") {
+        userSquareSequence.push(parseInt(clickedSquare));
+        console.log(userSquareSequence)
+        console.log(squareSequence)
+        if (userSquareSequence.length === squareSequence.length) {
+            if (JSON.stringify(userSquareSequence) === JSON.stringify(squareSequence)) {
+                winLevel()
+            } else {
+                loseGame()
+            }
         }
     }
 }
@@ -72,5 +76,6 @@ function loseGame() {
     userSquareSequence = []
     level = 1
     updateScoreAndLevel()
+    gameState = "not playing";
     console.log("Lose")
 }
