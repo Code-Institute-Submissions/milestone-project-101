@@ -50,6 +50,12 @@ function squareOff(square) {
 function handleUserClickingASquare(clickedSquare) {
     if (gameState === "user input") {
         userSquareSequence.push(parseInt(clickedSquare));
+        //$("#square-").mouseover(function () {
+        //    $("#square-").css("background-color", "yellow");
+        //});
+        //$("#square-").mouseout(function () {
+        //    $("#square-").css("background-color", "lightgray");
+        //});
         console.log(userSquareSequence)
         console.log(squareSequence)
         if (userSquareSequence.length === squareSequence.length) {
