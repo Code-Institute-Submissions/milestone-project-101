@@ -5,6 +5,11 @@
     display: inline-block;
 }
 
+/*.square:hover {
+    opacity: 1;
+    box-shadow: 2px 2px 4px 0px black;
+} */
+
 #square-1 {
     background-color: red;
 }
@@ -23,4 +28,5 @@
 
 .square.active {
     opacity: 1;
+    box-shadow: 2px 2px 4px 0px black;
 }
