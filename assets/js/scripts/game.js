@@ -19,6 +19,7 @@ var squareSequence = []
 var userSquareSequence = []
 var userScore = 0
 var level = 1
+var highScore = 0
 
 async function startCurrentLevel(){
     $("#start-game").hide()
@@ -83,6 +84,7 @@ function winLevel() {
     userSquareSequence = []
     level++
     updateScoreAndLevel()
+    updateHighScore()
     startCurrentLevel()
     $(".square").unbind("mouseover mouseout");
     console.log("Win")
@@ -100,14 +102,10 @@ function loseGame() {
     console.log("Lose")
 }
 
-function winGame() {
-    if (level === 10) {
-        alert("You have won the game!")
+function updateHighScore() {
+    if (userScore > highScore) {
+        highScore = userScore
+        $("#high-score").text(highScore);
     }
-}
-
-function changeInstruction() {
-    
-    
     
 }
