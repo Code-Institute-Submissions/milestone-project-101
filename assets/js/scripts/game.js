@@ -21,6 +21,7 @@ var userScore = 0
 var level = 1
 
 async function startCurrentLevel(){
+    $("#start-game").hide()
     squareSequence = Array(4).fill().map(() => randomIntFromInterval(1,4))
 
     await demonstrateLevelSequence(squareSequence);
@@ -85,6 +86,7 @@ function winLevel() {
 }
 
 function loseGame() {
+    $("#start-game").show()
     userSquareSequence = []
     level = 1
     updateScoreAndLevel()
