@@ -27,6 +27,7 @@ async function startCurrentLevel(){
 }
 
 async function demonstrateLevelSequence(squareSequence) {
+    $(".square").removeClass("active");
     gameState = "demonstration"
     var displayDelayDuration = 2000/level
     for (square of squareSequence) {
@@ -35,6 +36,12 @@ async function demonstrateLevelSequence(squareSequence) {
         await delay(displayDelayDuration).then(() => squareOff(square));
     }
     gameState = "user input"
+    $(".square").mouseover(function() {
+        $(this).addClass("active");
+    });
+    $(".square").mouseout(function() {
+        $(this).removeClass("active");
+    });
 }
 
 function squareOn(square) {
@@ -50,12 +57,6 @@ function squareOff(square) {
 function handleUserClickingASquare(clickedSquare) {
     if (gameState === "user input") {
         userSquareSequence.push(parseInt(clickedSquare));
-        //$("#square-").mouseover(function () {
-        //    $("#square-").css("background-color", "yellow");
-        //});
-        //$("#square-").mouseout(function () {
-        //    $("#square-").css("background-color", "lightgray");
-        //});
         console.log(userSquareSequence)
         console.log(squareSequence)
         if (userSquareSequence.length === squareSequence.length) {
@@ -79,6 +80,7 @@ function winLevel() {
     level++
     updateScoreAndLevel()
     startCurrentLevel()
+    $(".square").unbind("mouseover mouseout");
     console.log("Win")
 }
 
@@ -87,5 +89,12 @@ function loseGame() {
     level = 1
     updateScoreAndLevel()
     gameState = "not playing";
+    $(".square").unbind("mouseover mouseout");
     console.log("Lose")
+}
+
+function winGame() {
+    if (level === 10) {
+        alert("You have won the game!")
+    }
 }
