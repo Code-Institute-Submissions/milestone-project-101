@@ -74,7 +74,7 @@ function handleUserClickingASquare(clickedSquare) {
 }
 
 function updateScoreAndLevel() {
-    userScore = (level-1)*100
+    userScore = userScore+((level-1)*100)
     $("#user-score").text(userScore)
     $("#level").text(level)
 }
@@ -93,6 +93,7 @@ function loseGame() {
     $("#start-game").show()
     userSquareSequence = []
     level = 1
+    userScore = 0
     updateScoreAndLevel()
     gameState = "not playing";
     $(".square").unbind("mouseover mouseout");
