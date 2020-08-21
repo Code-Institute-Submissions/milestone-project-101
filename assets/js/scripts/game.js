@@ -35,6 +35,7 @@ async function demonstrateLevelSequence(squareSequence) {
         console.log(square);
         squareOn(square);
         await delay(displayDelayDuration).then(() => squareOff(square));
+        await delay(300);
     }
     gameState = "user input"
     $(".square").mouseover(function() {
