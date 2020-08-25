@@ -9,56 +9,75 @@
 
 </head>
 <body>
-	<div class="container-fluid">
-		<!-- Memory Game Title -->
-        <div class="row">
-            <div class="col-12">
-                <h2>Memory Game</h2>
-                <ul> 
-                    <li>Step 1: Press Start</li>
-                    <li>Step 2: Memorise the order of the sequence of squares as they light up</li>
-                    <li>Step 3: Click the squares in the right sequence</li>
-                    <li>Step 4: Try and beat your highscore</li>
-                    <br>
-                    Each time you successfully repeat the sequence the game speed increases
-                </ul>
-            </div>
-        </div>
-
-		<!-- Start Game Button -->
-		<div class="row">
-			<div class="col">
-				<button id="start-game">Start</button>
+	<div id="game-window">
+		<div class="container-fluid">
+			<!-- Memory Game Title -->
+			<div class="row">
+				<div class="col-12">
+					<h2>Memory Game</h2>
+				</div>
 			</div>
-		</div>
-		
-		<div class="row">
-            <!-- Level Indicator -->
-			<div class="col-4">
-				<h6>Level</h6>
-				<h4 id="level">1</h4>
-			</div>
-            <!-- Score Indicator -->
-            <div class="col-4">
-				<h6>Score</h6>
-				<h4 id="user-score">0</h4>
-			</div>
-            <!-- Highscore Indicator -->
-            <div class="col-4">
-				<h6>Highscore</h6>
-				<h4 id="high-score">0</h4>
-			</div>
-		</div>
-
-		
 	
-		<!-- Instructions for user -->
-		<h4 id="user-instruction">click start</h4>
-		<!-- Game Interface - four squares -->
-		<div class="square" id="square-1" data-squareid="1"></div>
-		<div class="square" id="square-2" data-squareid="2"></div>
-		<div class="square" id="square-3" data-squareid="3"></div>
-		<div class="square" id="square-4" data-squareid="4"></div>
+			<div class="row">
+				<!-- Level Indicator -->
+				<div class="col-4">
+					<h6>Level</h6>
+					<h4 id="level">1</h4>
+				</div>
+				<!-- Score Indicator -->
+				<div class="col-4">
+					<h6>Score</h6>
+					<h4 id="user-score">0</h4>
+				</div>
+				<!-- Highscore Indicator -->
+				<div class="col-4">
+					<h6>Highscore</h6>
+					<h4 id="high-score">0</h4>
+				</div>
+			</div>
+	
+	
+	
+			<!-- Instructions for user -->
+			<h4 id="user-instruction">Click 'Start' to begin!</h4>
+
+			<!-- Game Interface - four squares -->
+			<div id="game-square">
+				<div class="row">
+					<div class="col-12">
+						<div class="square" id="square-1" data-squareid="1"></div>
+						<div class="square" id="square-2" data-squareid="2"></div>
+					</div>
+					<div class="col-12">
+						<div class="square" id="square-3" data-squareid="3"></div>
+						<div class="square" id="square-4" data-squareid="4"></div>
+					</div>
+				</div>
+			</div>
+
+            <!-- Start Game Button -->
+			<div class="row">
+				<div class="col">
+					<button id="start-game">Start</button>
+				</div>
+			</div>
+            <div class="row">
+				<div class="col">
+            		<ul>
+						<li>Step 1:</li>
+                        <li>Press Start</li>
+						<li>Step 2:</li>
+                        <li>Memorise the order of the sequence of squares as they light up</li>
+						<li>Step 3:</li>
+                        <li>Click the squares in the right sequence</li>
+						<li>Step 4:</li>
+                        <li>Try and beat your highscore</li>
+						<br>
+	                    Each time you successfully repeat the sequence the game speed increases
+	                </ul>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 <!-- jQuery CDN -->
