@@ -9,49 +9,57 @@
 
 </head>
 <body>
-    <!-- Memory Game Title -->
-    <h2>Memory Game</h2>
-    <br>
-    <!-- Instructions -->
-    <p>The goal of the game is to memorise the order the squares light up and repeat it
-        Each level increases in difficulty.</p>
-    <br>
-    <!-- Start Game Button -->
-    <div class="row">
-        <div class="col">
-            <button id="start-game">Start</button>
+	<div class="container-fluid">
+		<!-- Memory Game Title -->
+        <div class="row">
+            <div class="col-12">
+                <h2>Memory Game</h2>
+                <ul> 
+                    <li>Step 1: Press Start</li>
+                    <li>Step 2: Memorise the order of the sequence of squares as they light up</li>
+                    <li>Step 3: Click the squares in the right sequence</li>
+                    <li>Step 4: Try and beat your highscore</li>
+                    <br>
+                    Each time you successfully repeat the sequence the game speed increases
+                </ul>
+            </div>
         </div>
-    </div>
-    <br>
-    <!-- Highscore Indicator -->
-    <div class="row">
-        <div class="col">
-            <h6>Highscore</h6>
-            <h4 id="high-score">0</h4>
-        </div>
-    </div>
-    <!-- Score -->
-    <div class="row">
-        <div class="col">
-            <h6>Score</h6>
-            <h4 id="user-score">0</h4>
-        </div>
-    </div>
-    <!-- Level Indicator -->
-    <div class="row">
-        <div class="col">
-            <h6>Level</h6>
-            <h4 id="level">1</h4>
-        </div>
-    </div>
-    <!-- Instructions for user -->
-    <h4 id="user-instruction">click start</h4>
-    <!-- Game Interface - four squares -->
-    <div class="square" id="square-1" data-squareid="1"></div>
-    <div class="square" id="square-2" data-squareid="2"></div>
-    <div class="square" id="square-3" data-squareid="3"></div>
-    <div class="square" id="square-4" data-squareid="4"></div>
 
+		<!-- Start Game Button -->
+		<div class="row">
+			<div class="col">
+				<button id="start-game">Start</button>
+			</div>
+		</div>
+		
+		<div class="row">
+            <!-- Level Indicator -->
+			<div class="col-4">
+				<h6>Level</h6>
+				<h4 id="level">1</h4>
+			</div>
+            <!-- Score Indicator -->
+            <div class="col-4">
+				<h6>Score</h6>
+				<h4 id="user-score">0</h4>
+			</div>
+            <!-- Highscore Indicator -->
+            <div class="col-4">
+				<h6>Highscore</h6>
+				<h4 id="high-score">0</h4>
+			</div>
+		</div>
+
+		
+	
+		<!-- Instructions for user -->
+		<h4 id="user-instruction">click start</h4>
+		<!-- Game Interface - four squares -->
+		<div class="square" id="square-1" data-squareid="1"></div>
+		<div class="square" id="square-2" data-squareid="2"></div>
+		<div class="square" id="square-3" data-squareid="3"></div>
+		<div class="square" id="square-4" data-squareid="4"></div>
+	</div>
 </body>
 <!-- jQuery CDN -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -65,20 +73,7 @@
 	integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
 </script>
 
-<!-- Load Jasmine Framework -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine.js"
-	integrity="sha256-PePX8Jc4TIxzzVz0Qe4NsH3OUU8+Y49DBWvYgggNqkY=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine-html.js"
-	integrity="sha256-qazAASTTgUrq9SOYkPSB3oEuqbhn+2j4kxGkVZ0GKjY=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/boot.js"
-	integrity="sha256-HG8TKl0T65NyELmbUoo0H7/a1e++smYdXXtuuEsyKok=" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine.css"
-	integrity="sha256-YzqdEMEXu1sH1t2Y9tk3XhKhxy1xMWvcA1koZx43k+8=" crossorigin="anonymous" />
-
 <!-- Load Scripts -->
 <script type="text/javascript" src="assets/js/scripts/game.js"></script>
-
-<!-- Load Tests -->
-<script type="text/javascript" src="assets/js/tests/gameSpecs.js"></script>
 
 </html>
