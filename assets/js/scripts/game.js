@@ -29,18 +29,19 @@ async function startCurrentLevel(){
 }
 
 async function demonstrateLevelSequence(squareSequence) {
+    await delay(1000);
     $(".square").removeClass("active");
     gameState = "demonstration"
-    $("#user-instruction").text("watch the sequence")
+    $("#user-instruction").text("Watch the squares carefully!")
     var displayDelayDuration = 2000/level
     for (square of squareSequence) {
         console.log(square);
         squareOn(square);
         await delay(displayDelayDuration).then(() => squareOff(square));
-        await delay(300);
+        await delay(400);
     }
     gameState = "user input"
-    $("#user-instruction").text("now repeat the sequence")
+    $("#user-instruction").text("Now it's your turn to repeat the sequence!")
     $(".square").mouseover(function() {
         $(this).addClass("active");
     });
@@ -91,7 +92,7 @@ function winLevel() {
 }
 
 function loseGame() {
-    $("#user-instruction").text("try again")
+    $("#user-instruction").text("You lose! But you can still try and beat your highscore")
     $("#start-game").show()
     userSquareSequence = []
     level = 1
