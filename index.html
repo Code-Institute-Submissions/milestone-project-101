@@ -14,30 +14,28 @@
 			<!-- Memory Game Title -->
 			<div class="row">
 				<div class="col-12">
-					<h2>Memory Game</h2>
+					<h2 id="game-title">Memory Game</h2>
 				</div>
 			</div>
 	
-			<div class="row">
+			<div class="row" id="user-indicators">
 				<!-- Level Indicator -->
 				<div class="col-4">
 					<h6>Level</h6>
-					<h4 id="level">1</h4>
+					<h5 id="level">1</h5>
 				</div>
 				<!-- Score Indicator -->
 				<div class="col-4">
 					<h6>Score</h6>
-					<h4 id="user-score">0</h4>
+					<h5 id="user-score">0</h5>
 				</div>
 				<!-- Highscore Indicator -->
 				<div class="col-4">
 					<h6>Highscore</h6>
-					<h4 id="high-score">0</h4>
+					<h5 id="high-score">0</h5>
 				</div>
 			</div>
-	
-	
-	
+
 			<!-- Instructions for user -->
 			<h4 id="user-instruction">Click 'Start' to begin!</h4>
 
@@ -55,12 +53,7 @@
 				</div>
 			</div>
 
-            <!-- Start Game Button -->
-			<div class="row">
-				<div class="col">
-					<button id="start-game">Start</button>
-				</div>
-			</div>
+            <!-- Game Steps -->
             <div class="row">
 				<div class="col">
             		<ul>
@@ -75,6 +68,13 @@
 						<br>
 	                    Each time you successfully repeat the sequence the game speed increases
 	                </ul>
+				</div>
+			</div>
+
+            <!-- Start Game Button -->
+			<div class="row">
+				<div class="col">
+					<button id="start-game">Start</button>
 				</div>
 			</div>
 		</div>
