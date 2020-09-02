@@ -109,9 +109,9 @@ function updateHighScore() {
 }
 
 function removeCursor() {
-    $(".square").css("cursor", "none")
+    $("#game-square").css("cursor", "none")
 }
 
 function changeCursor() {
-    $(".square").css("cursor", "pointer")
+    $("#game-square").css("cursor", "pointer")
 }
