@@ -4,8 +4,8 @@
 
 body {
     font-family: 'Dosis', sans-serif!important;
-    color: #fff!important;
-    background-color: rgba(0,0,0,0.5)!important;
+    color: #eee!important;
+    background-color: #222!important;
 }
 
 ul {
@@ -77,4 +77,11 @@ h6 {
 #user-instruction {
     font-family: 'Inconsolata', monospace;
     margin-bottom: .75rem;
+}
+
+/* =================================================== Start Game */
+
+#start-game {
+    margin-bottom: 0.75rem;
+
 }
