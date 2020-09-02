@@ -35,11 +35,11 @@ async function demonstrateLevelSequence(squareSequence) {
     $("#user-instruction").text("Watch the squares carefully!")
     var displayDelayDuration = 2000/level
     for (square of squareSequence) {
-        console.log(square);
         squareOn(square);
         await delay(displayDelayDuration).then(() => squareOff(square));
         await delay(400);
     }
+
     gameState = "user input"
     $("#user-instruction").text("Now it's your turn to repeat the sequence!")
     $(".square").mouseover(function() {
@@ -52,19 +52,15 @@ async function demonstrateLevelSequence(squareSequence) {
 
 function squareOn(square) {
     $("#square-"+square).addClass("active")
-    console.log("on " + square)
 }
 
 function squareOff(square) {
     $("#square-"+square).removeClass("active")
-    console.log("off " + square)
 }
 
 function handleUserClickingASquare(clickedSquare) {
     if (gameState === "user input") {
         userSquareSequence.push(parseInt(clickedSquare));
-        console.log(userSquareSequence)
-        console.log(squareSequence)
         if (userSquareSequence.length === squareSequence.length) {
             if (JSON.stringify(userSquareSequence) === JSON.stringify(squareSequence)) {
                 winLevel()
@@ -88,7 +84,6 @@ function winLevel() {
     updateHighScore()
     startCurrentLevel()
     $(".square").unbind("mouseover mouseout");
-    console.log("Win")
 }
 
 function loseGame() {
@@ -100,7 +95,6 @@ function loseGame() {
     updateScoreAndLevel()
     gameState = "not playing";
     $(".square").unbind("mouseover mouseout");
-    console.log("Lose")
 }
 
 function updateHighScore() {
