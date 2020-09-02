@@ -33,6 +33,7 @@ async function demonstrateLevelSequence(squareSequence) {
     $(".square").removeClass("active");
     gameState = "demonstration"
     $("#user-instruction").text("Watch the squares carefully!")
+    removeCursor()
     var displayDelayDuration = 2000/level
     for (square of squareSequence) {
         squareOn(square);
@@ -42,6 +43,7 @@ async function demonstrateLevelSequence(squareSequence) {
 
     gameState = "user input"
     $("#user-instruction").text("Now it's your turn to repeat the sequence!")
+    changeCursor()
     $(".square").mouseover(function() {
         $(this).addClass("active");
     });
@@ -106,3 +108,10 @@ function updateHighScore() {
     
 }
 
+function removeCursor() {
+    $(".square").css("cursor", "none")
+}
+
+function changeCursor() {
+    $(".square").css("cursor", "pointer")
+}
