@@ -22,7 +22,7 @@ var level = 1
 var highScore = 0
 
 async function startCurrentLevel(){
-    $("#start-game").hide()
+    $("#start-game").css('visibility','hidden')
     squareSequence = Array(4).fill().map(() => randomIntFromInterval(1,4))
 
     await demonstrateLevelSequence(squareSequence);
@@ -92,8 +92,8 @@ function winLevel() {
 }
 
 function loseGame() {
-    $("#user-instruction").text("You lose! But you can still try and beat your highscore")
-    $("#start-game").show()
+    $("#user-instruction").text("You lose! Please try again")
+    $("#start-game").css('visibility','visible')
     userSquareSequence = []
     level = 1
     userScore = 0
@@ -106,7 +106,9 @@ function loseGame() {
 function updateHighScore() {
     if (userScore > highScore) {
         highScore = userScore
+        $("#user-instruction").text("New High Score!!")
         $("#high-score").text(highScore);
     }
     
 }
+
