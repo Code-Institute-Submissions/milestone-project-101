@@ -88,7 +88,7 @@ function winLevel() {
     updateScoreAndLevel()
     updateHighScore()
     startCurrentLevel()
-    $(".square").unbind("mouseover mouseout");
+    $(".square").unbind("mouseover mouseout mousemove");
 }
 
 function loseGame() {
@@ -99,7 +99,7 @@ function loseGame() {
     userScore = 0
     updateScoreAndLevel()
     gameState = "not playing";
-    $(".square").unbind("mouseover mouseout");
+    $(".square").unbind("mouseover mouseout mousemove");
 }
 
 function updateHighScore() {
