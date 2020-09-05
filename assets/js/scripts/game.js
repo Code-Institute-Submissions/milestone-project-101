@@ -47,6 +47,9 @@ async function demonstrateLevelSequence(squareSequence) {
     $(".square").mouseover(function() {
         $(this).addClass("active");
     });
+    $(".square").mousemove(function() {
+        $(this).addClass("active");
+    });
     $(".square").mouseout(function() {
         $(this).removeClass("active");
     });
