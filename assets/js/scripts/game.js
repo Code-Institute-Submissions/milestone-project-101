@@ -8,7 +8,7 @@ function randomIntFromInterval(min, max) { return Math.floor(Math.random() * (ma
 var gameState = "not playing";
 
 $(document).ready(function() {
-
+    $(".square").addClass("active")
     $("#start-game").click(startCurrentLevel)
     $(".square").click(function() {
         handleUserClickingASquare($(this).attr("data-squareid"))
