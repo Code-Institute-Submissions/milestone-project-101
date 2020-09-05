@@ -24,7 +24,7 @@ var highScore = 0
 async function startCurrentLevel(){
     $("#start-game").css('visibility','hidden')
     squareSequence = Array(4).fill().map(() => randomIntFromInterval(1,4))
-
+    $(".square").removeClass("active");
     await demonstrateLevelSequence(squareSequence);
 }
 
