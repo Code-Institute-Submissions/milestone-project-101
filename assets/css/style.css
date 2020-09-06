@@ -34,26 +34,43 @@ h6 {
     width: 150px;
     opacity: 0.5;
     display: inline-block;
+    border: black solid 1px;
 }
 
-#square-1 {
-    background-color: red;
-    border-radius: 5px 0 0 0;
+#square-1 { /* gradient copied from https://coolors.co/gradient-maker */
+    border-radius: 10px 0 0 0;
+    background: hsla(217, 100%, 50%, 1);
+    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1 );
 }
 
-#square-2 {
-    background-color: blue;
-    border-radius: 0 5px 0 0;
+#square-2 { /* gradient copied from https://coolors.co/gradient-maker */
+    border-radius: 0 10px 0 0;
+    background: hsla(333, 100%, 53%, 1);
+    background: linear-gradient(45deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+    background: -moz-linear-gradient(45deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+    background: -webkit-linear-gradient(45deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ff0f7b", endColorstr="#f89b29", GradientType=1 );
 }
 
 #square-3 {
-    background-color: green;
-    border-radius: 0 0 0 5px;
+    border-radius: 0 0 0 10px;
+    background: hsla(33, 100%, 53%, 1);
+    background: linear-gradient(225deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+    background: -moz-linear-gradient(225deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+    background: -webkit-linear-gradient(225deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF930F", endColorstr="#FFF95B", GradientType=1 );
 }
 
 #square-4 {
-    background-color: yellow;
-    border-radius: 0 0 5px 0;
+    border-radius: 0 0 10px 0;
+    background: hsla(238, 100%, 71%, 1);
+    background: linear-gradient(315deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+    background: -moz-linear-gradient(315deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+    background: -webkit-linear-gradient(315deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#696EFF", endColorstr="#F8ACFF", GradientType=1 );
 }
 
 .square.active {
@@ -61,18 +78,25 @@ h6 {
     box-shadow: 2px 2px 4px 0px #222;
 }
 
-#game-square {
-    background-color: grey;
+.game-square-area {
     border-radius: 15px;
     padding: .5rem;
     margin-bottom: .75rem;
     margin-left: auto;
     margin-right: auto;
     width: 20rem;
-    box-shadow: #eee 20px 20px 20px 0px;
+    box-shadow: #eee 10px 10px 10px;
+}
+/* background gradient copied from https://coolors.co/gradient-maker/103783-9bafd9?position=0,100&opacity=100,100&type=linear&rotation=135 */
+.game-square-bg-color {
+    background: hsla(220, 78%, 29%, 1);
+    background: linear-gradient(315deg, hsla(220, 78%, 29%, 1) 0%, hsla(221, 45%, 73%, 1) 100%);
+    background: -moz-linear-gradient(315deg, hsla(220, 78%, 29%, 1) 0%, hsla(221, 45%, 73%, 1) 100%);
+    background: -webkit-linear-gradient(315deg, hsla(220, 78%, 29%, 1) 0%, hsla(221, 45%, 73%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#103783", endColorstr="#9bafd9", GradientType=1 );
 }
 
-#square-display {
+.square-display {
     display: block!important;
 }
 
@@ -83,7 +107,7 @@ h6 {
 
 /* =================================================== Game Window */
 
-#game-window {
+.game-window {
     text-align: center;
 }
 
@@ -103,4 +127,10 @@ h6 {
 
 #start-game {
     margin-bottom: 0.75rem;
+}
+
+/* =================================================== How to */
+.how-to {
+    margin: 0 auto;
+    padding-top: 1rem;
 }
