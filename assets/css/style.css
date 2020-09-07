@@ -94,7 +94,7 @@ a:hover {
     border-radius: 15px;
     padding: .5rem;
     margin: 0 auto;
-    width: 20rem;
+    width: 22rem;
 }
 /* background gradient copied from https://coolors.co/gradient-maker/103783-9bafd9?position=0,100&opacity=100,100&type=linear&rotation=135 */
 .game-square-bg-color {
@@ -106,11 +106,12 @@ a:hover {
 }
 
 .square-display {
-    display: block!important;
+    display: inline-block!important;
+    margin: 0 auto;
 }
 
 .square-row {
-    margin: 0 auto!important;
+    margin: 0 auto;
     display: inline;
 }
 
