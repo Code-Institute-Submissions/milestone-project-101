@@ -108,13 +108,12 @@ function updateHighScore() {
         $("#user-instruction").text("New High Score!!")
         $("#high-score").text(highScore);
     }
-    
 }
 
 function removeCursor() {
-    $("#game-square").css("cursor", "none")
+    $(".game-square-area").css("cursor", "none")
 }
 
 function changeCursor() {
-    $("#game-square").css("cursor", "pointer")
+    $(".game-square-area").css("cursor", "pointer")
 }
