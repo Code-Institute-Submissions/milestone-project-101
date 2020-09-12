@@ -1,9 +1,15 @@
 `python3 -m http.server`
+# Memory Game | A simple single-player pattern-matching memory game.
 
-Your Project's Name
-One or two paragraphs providing an overview of your project.
+Code Institute Milestone Project 2 - Interactive Frontend Development
 
-Essentially, this part is your sales pitch.
+This project is a simple single-player pattern matching game inpisred by Simon and Bop It. It contains 4 squares, that light up in a randomly generated sequence and the user has to replicate that sequence successfully to pass the level and gain score. The demonstration sequence lights up faster and faster each level to give the user a bit of a challenge, as well as recording the users highscore. There is no level-cap or score-cap, the only limit is the users ability to remember the sequence and get it right. Why not try it yourself, whats the highest score you can get? 
+
+
+
+A live demo can be found [here](https://shaamuus.github.io/milestone-project-2/)
+
+---
 
 UX
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
