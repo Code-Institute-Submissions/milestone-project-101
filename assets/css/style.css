@@ -20,6 +20,10 @@ h6 {
     font-family: 'Oxygen', sans-serif;
 }
 
+.subheader-underline {
+    text-decoration: underline;
+}
+
 /* =================================================== Anchor links */
 a {
     color: #fff!important;
@@ -139,6 +143,7 @@ a:hover {
 .how-to {
     margin: 0 auto;
     padding-top: 1rem;
+    display: inline;
 }
 
 /* =================================================== Footer */
