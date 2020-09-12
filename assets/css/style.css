@@ -146,6 +146,10 @@ a:hover {
     display: inline;
 }
 
+.how-to-header {
+    margin-bottom: 1rem;
+}
+
 /* =================================================== Footer */
 .footer-wrap {
     background-color: #e97253;
