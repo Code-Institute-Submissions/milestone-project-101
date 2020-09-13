@@ -5,7 +5,7 @@ Code Institute Milestone Project 2 - Interactive Frontend Development
 
 This project is a simple single-player pattern matching game inpisred by Simon and Bop It. It contains 4 squares, that light up in a randomly generated sequence and the user has to replicate that sequence successfully to pass the level and gain score. The demonstration sequence lights up faster and faster each level to give the user a bit of a challenge, as well as recording the users highscore. There is no level-cap or score-cap, the only limit is the users ability to remember the sequence and get it right. Why not try it yourself, whats the highest score you can get? 
 
-
+![Memory Game - Interactive Frontend Website](https://github.com/shaamuus/milestone-project-2/blob/master/attachments/responsive-website.jpg "Memory Game - Interactive Frontend Website")
 
 A live demo can be found [here](https://shaamuus.github.io/milestone-project-2/)
 
