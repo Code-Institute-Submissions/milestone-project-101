@@ -3,7 +3,7 @@
 
 Code Institute Milestone Project 2 - Interactive Frontend Development
 
-This project is a simple single-player pattern matching game inpisred by Simon and Bop It. It contains 4 squares, that light up in a randomly generated sequence and the user has to replicate that sequence successfully to pass the level and gain score. The demonstration sequence lights up faster and faster each level to give the user a bit of a challenge, as well as recording the users highscore. There is no level-cap or score-cap, the only limit is the users ability to remember the sequence and get it right. Why not try it yourself, what's the highest score you can get? 
+This project is a simple single-player pattern matching game inpisred by Simon and Bop It. It contains 4 squares, that light up in a randomly generated sequence and the user has to replicate that sequence successfully to pass the level and gain score. The demonstration sequence lights up faster and faster each level to give the user a bit of a challenge, as well as recording the users highscore. There is no level-cap or score-cap, the only limit is the users ability to remember the sequence and get it right. Why not try it yourself, what's the best score you can get? 
 
 ![Memory Game - Interactive Frontend Website](https://github.com/shaamuus/milestone-project-2/blob/master/attachments/responsive-website.jpg "Memory Game - Interactive Frontend Website")
 
@@ -30,7 +30,12 @@ A live demo can be found [here](https://shaamuus.github.io/milestone-project-2/)
 ---
 
 ## UX
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+This app is for you and me, it's easy to use, it's easy to leran and it's fun to play. For the more competitive players it can get addictive, however regardless of your skill it is rewarding for winners and gives everyone an opportunity. 
+
+I went with a 'most viable product' approach, by reducing the clutter and focusing on the game and what matters most, I was able to create something that is simple yet effective, fun yet demanding. The overall experience is positive and highlights what you can achieve when you boil things down to their basic elements.
+
+I focused mainly on the javascript and tried to write it and create a game that logically worked, this was my main focus long before I decided on what colours to change the squares to. I wanted the play button to start a demonstration sequence for the user to see, and give them enough time to learn, gradually increasing in speed as user progresses through the levels. With each level successfully passed, the level indicator increases and so does the users score, if the users current score beats their highscore, the text above the game says 'new highscore'. Everything in this app is manipulated through Javascript.
+
 
 ### User Stories
 - _As a user of this app, I want everything layed out and easy to navigate._
@@ -42,8 +47,13 @@ Use this section to provide insight into your UX process, focusing on who this w
 - _As a user of this app, I want to contact the developer and see other projects they've done._
 
 ### Wireframes
-As a user type, I want to perform an action, so that I can achieve a goal.
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+As part of the development process with this proejct I created mockups with wireframes using [Balsamiq]
+
+This was hard at first as I didn't know where to start. However I sat down and thought long and hard about what my 'most viable product' would look like and decided to keep it simple, yet effective. At the end of the day this is the first time I've used JavaScript for anything serious and feel like I've learnt a lot during this process. 
+
+As you can see in the wireframe, it's pretty basic but still highlights the features I consider highly important, such as the demonstration sequence, user input, win level and lose game sections.
+
+![Memory Game - Wireframe Page](https://github.com/shaamuus/milestone-project-2/blob/master/attachments/memory-game-wireframe.png "Memory Game - Wireframe Page")
 
 ---
 
@@ -98,7 +108,7 @@ The following technologies has been used in this project:
 ---
 
 ## Testing
-During this project I created a repository for it on github and accessed it through gitpod workspaces. Every change in the html/ css file was saved and then run locally by entering 'python3 -m http.server' into the terminal to view changes. If changes were successful I added the file to the git server by inputting 'git add (file name)' and then committed the files with a corresponding message indicating what changes had been made by inputting 'git commit -m "changes". After that I pushed the files to my repository using 'git push' 
+During this project I created a repository for it on github and accessed it through gitpod workspaces. Every change in the html/ css/ js files was saved and then run locally by entering 'python3 -m http.server' into the terminal to view changes. If changes were successful I added the file to the git server by inputting 'git add (file name)' and then committed the files with a corresponding message indicating what changes had been made by inputting 'git commit -m "changes". After that I pushed the files to my repository using 'git push' 
 
 ### Stories
 - _As a user of this app, I want everything layed out and easy to navigate._
@@ -121,6 +131,7 @@ During this project I created a repository for it on github and accessed it thro
 
 - _As a user of this app, I want to contact the developer and see other projects they've done._
   - There is a link in the footer to the developers linkedin page (obviously mine)
+
 
 Automatic testing not completed as I didn't understand the Jasmine lesson as well as not have time to use the Jasmine framework and build with it.
 
