@@ -1,4 +1,3 @@
-`python3 -m http.server`
 # Memory Game | A simple single-player pattern-matching memory game.
 
 Code Institute Milestone Project 2 - Interactive Frontend Development
