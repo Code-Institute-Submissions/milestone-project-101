@@ -3,7 +3,7 @@
 
 Code Institute Milestone Project 2 - Interactive Frontend Development
 
-This project is a simple single-player pattern matching game inpisred by Simon and Bop It. It contains 4 squares, that light up in a randomly generated sequence and the user has to replicate that sequence successfully to pass the level and gain score. The demonstration sequence lights up faster and faster each level to give the user a bit of a challenge, as well as recording the users highscore. There is no level-cap or score-cap, the only limit is the users ability to remember the sequence and get it right. Why not try it yourself, whats the highest score you can get? 
+This project is a simple single-player pattern matching game inpisred by Simon and Bop It. It contains 4 squares, that light up in a randomly generated sequence and the user has to replicate that sequence successfully to pass the level and gain score. The demonstration sequence lights up faster and faster each level to give the user a bit of a challenge, as well as recording the users highscore. There is no level-cap or score-cap, the only limit is the users ability to remember the sequence and get it right. Why not try it yourself, what's the highest score you can get? 
 
 ![Memory Game - Interactive Frontend Website](https://github.com/shaamuus/milestone-project-2/blob/master/attachments/responsive-website.jpg "Memory Game - Interactive Frontend Website")
 
@@ -58,8 +58,26 @@ Another feature idea
 ## Technologies Used
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
-- JQuery
-The project uses JQuery to simplify DOM manipulation.
+The following technologies has been used in this project:
+
+### Languages
+- [HTML](https://en.wikipedia.org/wiki/HTML): for the structure of my project
+- [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets): for most of the styling in my project
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript): for the entire game logic, user feedback, score and level increase
+
+### Styling
+- [Google fonts](https://fonts.google.com/): for the fonts I used; 'Inconsolata', 'Dosis' and 'Oxygen'
+- [Coolors](https://coolors.co/gradients): for the background gradients in the squares, the square area and the footer
+
+### Frameworks/ libraries
+- [Bootstrap](https://getbootstrap.com/) for the grid layout, keep everhything neat and tidy
+- [jQuery](https://code.jquery.com/)for the logic of the game
+
+### Additional
+- [CSS Validator](https://jigsaw.w3.org/css-validator/validator.html.en) I used this to validate the CSS code
+- [Markup Validator](https://validator.w3.org/) I used this to validate the HTML code
+- [HTML Formatter](https://htmlformatter.com/) I used this to format my HTML
+- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) I used the console in the browser to debug my game as well as to test the responsiveness of the elements as I built my project.
 
 ---
 
@@ -110,13 +128,11 @@ To deploy the code locally using gitpod, the follow steps need to be taken:
 
 ## Credits
 ### Content
-The text for section Y was copied from the Wikipedia article Z
-
-### Media
-The photos used in this site were obtained from ...
+Everything in this project is my own work, all the coding is mine, unless otherwise specicified with a comment
 
 ### Acknowledgements
-I received inspiration for this project from X
+I wanna thank [Aaron Sinnott](https://github.com/aaronsnig501) for the skype calls and mentoring help during this project.
+
 
 ---
 
